@@ -1,5 +1,6 @@
-import * as a from 'keycloak'
+jest.unmock('keycloak');
+import * as Keycloak from 'keycloak';
 
 it('should work', () => {
-  expect(a).toBeDefined();
+  expect(Keycloak).toBeDefined();
 })
